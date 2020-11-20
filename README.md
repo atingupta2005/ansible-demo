@@ -24,7 +24,10 @@
  - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@40.83.249.79
 
 # Test the key
- - ssh -i ~/.ssh/demo_id_rsa demouser@host1
+ - ssh -i ~/.ssh/demo_id_rsa demouser@138.91.140.75
+   - exit
+ - ssh -i ~/.ssh/demo_id_rsa demouser@40.83.249.79
+   - exit
 
 # Test Ansible is able to conenct to all hosts
  - ansible all -i hosts -m ping
