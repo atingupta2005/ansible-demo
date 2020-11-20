@@ -17,11 +17,11 @@
  - vim hosts
 
 # Deploy Public Key to host
- - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@<ipaddress>
- - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@<ipaddress>
+ - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@host1
+ - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@host1
 
 # Test the key
- - ssh -i ~/.ssh/demo_id_rsa demouser@<ipaddress>
+ - ssh -i ~/.ssh/demo_id_rsa demouser@host1
 
 # Test Ansible is able to conenct to all hosts
  - ansible all  --module-name ping -u demouser
