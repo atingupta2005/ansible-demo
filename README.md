@@ -33,13 +33,13 @@
  - ansible all -i hosts -m ping
 
 # Running ad hoc commands
-- ansible all -a uptime
-- ansible all -a "free -m"
-- ansible all -a "df -h"
+- ansible all -i hosts -a uptime
+- ansible all -i hosts -a "free -m"
+- ansible all -i hosts -a "df -h"
 
 # Running Playbook
 - vim first_playbook.yml
 - ansible-playbook -i hosts first_playbook.yml
 
 # Confirm content of the file in all hosts
-- ansible all -a "cat /tmp/testfile.txt"
+- ansible all -i hosts -a "cat /tmp/testfile.txt"
