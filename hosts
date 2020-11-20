@@ -1,5 +1,4 @@
 [demoservers]
-vm1 ansible_host=104.210.63.128
 vm2 ansible_host=138.91.140.75
 vm3 ansible_host=40.83.249.79
 
