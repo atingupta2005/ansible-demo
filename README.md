@@ -35,7 +35,8 @@ ansible-inventory -i hosts --list
 - ansible all -a "df -h"
 
 # Running Playbook
-ansible-playbook -i hosts playbook.yml
+- vim first_playbook.yml
+- ansible-playbook -i hosts first_playbook.yml
 
- 
- 
+# Confirm content of the file in all hosts
+- ansible all -a "cat /tmp/testfile.txt"
