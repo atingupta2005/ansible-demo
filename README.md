@@ -17,11 +17,11 @@
  - vim hosts
 
 # Validate and obtain information about your Ansible inventory
-ansible-inventory -i hosts --list
+ - ansible-inventory -i hosts --list
 
 # Deploy Public Key to host
- - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@host1
- - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@host1
+ - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@138.91.140.75
+ - ssh-copy-id -i ~/.ssh/demo_id_rsa.pub demouser@40.83.249.79
 
 # Test the key
  - ssh -i ~/.ssh/demo_id_rsa demouser@host1
